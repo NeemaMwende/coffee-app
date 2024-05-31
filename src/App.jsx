@@ -1,5 +1,6 @@
 import About from './About';
 import './App.css';
+import Contact from './Contact';
 import Home from './Home';
 import Menu from './Menu';
 import Navbar from './Navbar';
@@ -15,6 +16,7 @@ function App() {
       <Menu />
       <Products />
       <Reviews />
+      <Contact />
     </div>
   );
 }

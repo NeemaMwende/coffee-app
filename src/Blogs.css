@@ -1,0 +1,46 @@
+.blog .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 1rem;
+}
+.blog .box-container .box{
+    border: 1px solid #fff;
+}
+.blog .box-container .box .image{
+    height: 20rem;
+    overflow: hidden;
+    width: 100%;
+}
+.blog .box-container .box .image img{
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+    transition: 1s ease-in;
+}
+.blog .box-container .box:hover .image img{
+    transform: scale(1.2);
+}
+.blog .box-container .box .content{
+    padding: 1rem;
+}
+.blog .box-container .box .content .title{
+    font-size: 1.8rem;
+    line-height: 1.5;
+    color: #fff;
+    text-decoration: none;
+}
+.blog .box-container .box .content .title:hover{
+    color: #d3ad7f;
+}
+.blog .box-container .box .content span{
+    color: #d3ad7f;
+    display: block;
+    padding-top: .5rem;
+    font-size: 1.4rem;
+}
+.blog .box-container .box .content p{
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #ccc;
+    padding: 1rem 0;
+}

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Navbar.css';
+import angel from "../src/Images/logo.png"
 // import { Link } from 'react-router-dom';
 
 const Navbar = () => {
@@ -8,7 +9,7 @@ const Navbar = () => {
             <>
                 <div className="header">
                     <div className="logo">
-                     <img src="./images/logo.png" />
+                     <img src={angel} />
                     </div>
             <div className="navigation">
                 <ul>

@@ -1,0 +1,38 @@
+
+.about .row{
+    display: flex;
+    align-items: center;
+    background: rgb(15, 19, 32);
+    flex-wrap: wrap;
+}
+.about .row .image{
+    flex: 1 1 15rem;
+}
+.about .row .image img{
+    width: 100%;
+}
+.about .row .content{
+    flex: 1 1 15rem;
+    padding: 1.5rem;
+    line-height: 40px;
+}
+.about .row .content h3{
+    font-size: 1.5rem;
+    color: #fff;
+}
+.about .row .content p{
+    font-size: 1rem;
+    color: #fff;
+    padding: 1rem 0;
+    line-height: 1.2;
+}
+.about .content .button{
+    width: 200px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+.button:hover{
+    color: blanchedalmond;
+}

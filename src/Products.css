@@ -1,0 +1,49 @@
+.product .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 1rem;
+}
+.product .box-container .box{
+    text-align: center;
+    border: 1px solid white;
+    padding: .5rem;
+}
+.product .box-container .box .icons a{
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    border: 1px solid white;
+    color: #fff;
+    margin: .5rem;
+}
+.product .box-container .box .icons a:hover{
+    background: #d3ad7f;
+}
+.product .box-container .box .image{
+    padding: 2rem 0;
+}
+.product .box-container .box .image img{
+    height: 15rem;
+}
+.product .box-container .box .content h3{
+    color: #fff;
+    font-size: 1.5rem;
+}
+.product .box-container .box .content .stars{
+    padding: 1rem;
+}
+.product .box-container .box .content .stars i{
+    color: #d3ad7f;
+    font-size: 1.5rem;
+}
+.product .box-container .box .content .price{
+    color: #fff;
+    font-size: 1.5rem;
+}
+.product .box-container .box .content .price span{
+    color: rgb(83, 70, 70);
+    font-size: 1rem;
+    text-decoration: line-through;
+}

@@ -1,12 +1,14 @@
 .product .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-    gap: 1rem;
+    gap: 4rem;
+    margin-top: 20px;
 }
 .product .box-container .box{
     text-align: center;
     border: 1px solid white;
     padding: .5rem;
+    border-radius: 20px;
 }
 .product .box-container .box .icons a{
     height: 3rem;

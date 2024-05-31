@@ -4,6 +4,7 @@ import Home from './Home';
 import Menu from './Menu';
 import Navbar from './Navbar';
 import Products from './Products';
+import Reviews from './Reviews';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <About />
       <Menu />
       <Products />
+      <Reviews />
     </div>
   );
 }

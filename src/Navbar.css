@@ -72,7 +72,7 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
+    border-radius: 50px;
 }
 .navigation ul{
     display: flex;
@@ -84,6 +84,7 @@ section{
     width: 70px;
     height: 70px;
     z-index: 1;
+    cursor: pointer;
 }
 .navigation ul li a{
     position: relative;
@@ -101,12 +102,12 @@ section{
     line-height: 75px;
     font-size: 1.5em;
     align-items: center;
-    transition: 0.5s;
+    transition: 3.5s;
     fill: none;
     color: rgb(255, 255, 255);
 }
 .navigation ul li.active a .icon{
-    transform: translateY(-35px);
+    transform: translateY(-30px);
 }
 .navigation ul li a .text{
     position: absolute;
@@ -163,6 +164,7 @@ section{
     background: none;
     align-items: center;
     justify-content: center;
+    gap: 30px;
 }
 .m-icons div{
     position: relative;

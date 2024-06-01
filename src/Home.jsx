@@ -1,9 +1,11 @@
 import React from 'react';
 import "./Home.css";
+// import Link from 'react-router-dom';
 
 const Home = () => {
   return (
         <section class="home" id="home">
+          {/* <Link to="/">Home</Link> */}
             <div class="content">
                 <h3>Fresh coffee in the morning</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 

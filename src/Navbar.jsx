@@ -3,8 +3,8 @@ import './Navbar.css';
 import angel from "../src/Images/logo.png";
 
 const Navbar = () => {
-    const [showCart, setShowCart] = useState(false);
-    const [showSearch, setShowSearch] = useState(false);
+    const [showCart, setShowCart] = useState(true);
+    const [showSearch, setShowSearch] = useState(true);
 
     const toggleCart = () => setShowCart(!showCart);
     const toggleSearch = () => setShowSearch(!showSearch);

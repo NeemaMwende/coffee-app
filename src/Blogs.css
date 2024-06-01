@@ -1,15 +1,18 @@
 .blog .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-    gap: 1rem;
+    gap: 2rem;
+    margin-top: 30px;
 }
 .blog .box-container .box{
     border: 1px solid #fff;
+    border-radius: 40px;
 }
 .blog .box-container .box .image{
     height: 20rem;
     overflow: hidden;
     width: 100%;
+    border-radius: 50px;
 }
 .blog .box-container .box .image img{
     height: 100%;
@@ -18,7 +21,7 @@
     transition: 1s ease-in;
 }
 .blog .box-container .box:hover .image img{
-    transform: scale(1.2);
+    transform: scale(2.2);
 }
 .blog .box-container .box .content{
     padding: 1rem;

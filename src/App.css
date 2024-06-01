@@ -36,3 +36,31 @@
     transform: rotate(360deg);
   }
 }
+@media(max-width:991px){
+  html{
+      font-size: 85%;
+  }
+  .header{
+      padding: 1rem 1.5rem;
+  }
+  section{
+      padding: 1.5rem;
+  }
+}
+@media(max-width:450px){
+  html{
+      font-size: 50%;
+  }
+  .header{
+      padding: 1rem 1.5rem;
+  }
+  .home{
+      background-position: left;
+      justify-content: center;
+      text-align: center;
+      margin-top: 5%;
+  }
+  .home .content h3{
+      font-size: 1.5rem;
+  }
+}

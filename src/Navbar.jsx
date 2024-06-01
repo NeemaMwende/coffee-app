@@ -1,16 +1,19 @@
 import React, { useState } from 'react';
 import './Navbar.css';
-import angel from "../src/Images/logo.png"
-// import { Link } from 'react-router-dom';
+import angel from "../src/Images/logo.png";
 
 const Navbar = () => {
- 
+    const [showCart, setShowCart] = useState(false);
+    const [showSearch, setShowSearch] = useState(false);
+
+    const toggleCart = () => setShowCart(!showCart);
+    const toggleSearch = () => setShowSearch(!showSearch);
+
     return (
-            <>
-                <div className="header">
-                    <div className="logo">
-                     <img src={angel} />
-                    </div>
+        <div className="header">
+            <div className="logo">
+                <img src={angel} alt="Logo" />
+            </div>
             <div className="navigation">
                 <ul>
                     <li className="list active">
@@ -66,57 +69,60 @@ const Navbar = () => {
                             <span className="icon">
                                 <i className="fas fa-blog"></i>
                             </span>
-                            <span class="text">Blogs</span>
+                            <span className="text">Blogs</span>
                         </a>
                     </li>
                     <div className="indicator"></div>
                 </ul>
             </div>
             <div className="m-icons">
-                <div className="fas fa-search" id="search-btn"></div>
-                <div className="fas fa-shopping-cart" id="cart-btn"></div>
+                <div className="fas fa-search" id="search-btn" onClick={toggleSearch}></div>
+                <div className="fas fa-shopping-cart" id="cart-btn" onClick={toggleCart}></div>
                 <div className="fas fa-bars" id="menu-btn"></div>
             </div>
-            <div className="search-form">
-                <input type="search" id="search-input" placeholder="Search here..." /> 
-                <label for="search-input" className="fas fa-search"></label>
-            </div>
-            <div className="cart-items-container">
-                <div className="cart-items">
-                    <span className="fas fa-times"></span>
-                    <img src="./images/cart-item-1.png" />
-                    <div className="content">
-                        <h3>Cart Item 1</h3>
-                        <div className="price">KSH25.99/-</div>
-                    </div>
+            {showSearch && (
+                <div className="search-form">
+                    <input type="search" id="search-input" placeholder="Search here..." />
+                    <label htmlFor="search-input" className="fas fa-search"></label>
                 </div>
-                <div className="cart-items">
-                    <span className="fas fa-times"></span>
-                    <img src="./images/cart-item-2.png" />
-                    <div className="content">
-                        <h3>Cart Item 2</h3>
-                        <div class="price">KSH25.99/-</div>
+            )}
+            {showCart && (
+                <div className="cart-items-container">
+                    <div className="cart-items">
+                        <span className="fas fa-times"></span>
+                        <img src="./images/cart-item-1.png" alt="Cart Item 1" />
+                        <div className="content">
+                            <h3>Cart Item 1</h3>
+                            <div className="price">KSH25.99/-</div>
+                        </div>
                     </div>
-                </div>
-                <div className="cart-items">
-                    <span className="fas fa-times"></span>
-                    <img src="./images/cart-item-3.png" />
-                    <div className="content">
-                        <h3>Cart Item 3</h3>
-                        <div className="price">KSH25.99/-</div>
+                    <div className="cart-items">
+                        <span className="fas fa-times"></span>
+                        <img src="./images/cart-item-2.png" alt="Cart Item 2" />
+                        <div className="content">
+                            <h3>Cart Item 2</h3>
+                            <div className="price">KSH25.99/-</div>
+                        </div>
                     </div>
-                </div>
-                <div className="cart-items">
-                    <span class="fas fa-times"></span>
-                    <img src="./images/cart-item-4.png" />
-                    <div className="content">
-                        <h3>Cart Item 4</h3>
-                        <div className="price">KSH25.99/-</div>
+                    <div className="cart-items">
+                        <span className="fas fa-times"></span>
+                        <img src="./images/cart-item-3.png" alt="Cart Item 3" />
+                        <div className="content">
+                            <h3>Cart Item 3</h3>
+                            <div className="price">KSH25.99/-</div>
+                        </div>
                     </div>
+                    <div className="cart-items">
+                        <span className="fas fa-times"></span>
+                        <img src="./images/cart-item-4.png" alt="Cart Item 4" />
+                        <div className="content">
+                            <h3>Cart Item 4</h3>
+                            <div className="price">KSH25.99/-</div>
+                        </div>
+                    </div>
+                    <div className="button">Checkout</div>
                 </div>
-                <div className="button">Checkout</div>
-            </div>
-            
+            )}
             <div className="nav-bar">
                 <a href="#home">home</a>
                 <a href="#about">about</a>
@@ -127,7 +133,6 @@ const Navbar = () => {
                 <a href="#blog">blog</a>
             </div>
         </div>
-            </>
     );
 };
 

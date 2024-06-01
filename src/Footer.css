@@ -1,0 +1,53 @@
+footer{
+    background: rgb(15, 19, 32);
+    text-align: center;
+}
+.footer .share{
+    padding: 1rem 0;
+    gap: 10px;
+}
+.footer .share a{
+    height: 4rem;
+    width: 4rem;
+    line-height: 4rem;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid white;
+    margin: 2rem 0;
+    border-radius: 30px;
+    gap: 30px;
+}
+.footer .share a:hover{
+    background-color: #d3ad7f;
+}
+.footer .links{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    gap: 20px;
+    border-radius: 20px;
+
+}
+.footer .links a{
+    padding: .5rem 1.5rem;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid white;
+    font-size: 15px;
+}
+.footer .links a:hover{
+    background-color: #d3ad7f;
+}
+.footer .credit{
+    color: #fff;
+    font-size: 15px;
+    font-style: italic;
+    line-height: 1.5rem;
+    font-weight: lighter;
+}
+.footer .credit span{
+    font-size: 20px;
+    color: #d3ad7f;
+}

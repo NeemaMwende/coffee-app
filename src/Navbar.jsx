@@ -86,7 +86,7 @@ const Navbar = () => {
                     <label htmlFor="search-input" className="fas fa-search"></label>
                 </div>
             )}
-            {showCart && (
+            {/* {showCart && (
                 <div className="cart-items-container">
                     <div className="cart-items">
                         <span className="fas fa-times"></span>
@@ -122,7 +122,7 @@ const Navbar = () => {
                     </div>
                     <div className="button">Checkout</div>
                 </div>
-            )}
+            )} */}
             <div className="nav-bar">
                 <a href="#home">home</a>
                 <a href="#about">about</a>

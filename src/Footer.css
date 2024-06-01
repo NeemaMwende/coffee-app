@@ -36,9 +36,13 @@ footer{
     text-decoration: none;
     border: 1px solid white;
     font-size: 15px;
+    border-radius: 20px;
+    width: 100px;
+    background: #d3ad7f;
 }
 .footer .links a:hover{
     background-color: #d3ad7f;
+    background: rgb(209, 146, 30);
 }
 .footer .credit{
     color: #fff;

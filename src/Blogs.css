@@ -21,7 +21,7 @@
     transition: 1s ease-in;
 }
 .blog .box-container .box:hover .image img{
-    transform: scale(2.2);
+    transform: scale(1.2);
 }
 .blog .box-container .box .content{
     padding: 1rem;

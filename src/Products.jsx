@@ -3,11 +3,13 @@ import "./Products.css";
 import product1 from "./Images/product-1.png";
 import product2 from "./Images/product-2.png";
 import product3 from "./Images/product-3.png";
+import SlidingCard from './SlideCard';
 
 const Products = () => {
   return (
     <section className="product" id="product">
     <h1 className="heading">our <span>products</span></h1>
+       <SlidingCard>
         <div className="box-container">
             <div className="box">
                 <div className="icons">
@@ -73,6 +75,7 @@ const Products = () => {
                 </div>
             </div>
         </div>
+        </SlidingCard>
     </section>
   )
 }

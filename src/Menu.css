@@ -91,5 +91,10 @@
     .home .content p{
         font-size: 1rem;
     }
+    .button{
+        padding: 1rem 2rem;
+        font-size: 1rem;
+        width: 300px;
+    }
 
 }

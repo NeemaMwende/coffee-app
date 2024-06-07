@@ -17,6 +17,22 @@ const Reviews = () => {
                           illo suscipi tempore temporibus
                           laudantium necessitatibus illum optio.</p>
                            <img src={pic1} className="user" />
+                           <h3>Allen Renzen</h3>
+                           <div className="stars">
+                            <i className="fas fa-star"></i>
+                            <i className="fas fa-star"></i>
+                            <i className="fas fa-star"></i>
+                            <i className="fas fa-star"></i>
+                            <i className="fas fa-star-half-alt"></i>
+                        </div>
+                </div>
+                <div className="box">
+                    <img src={quote1} />
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         Velit, expedita error? Odio odit quas
+                          illo suscipi tempore temporibus
+                          laudantium necessitatibus illum optio.</p>
+                           <img src={pic1} className="user" />
                            <h3>Brian Wanyama</h3>
                            <div className="stars">
                             <i className="fas fa-star"></i>
@@ -33,7 +49,7 @@ const Reviews = () => {
                          illo suscipi tempore temporibus
                          laudantium necessitatibus illum optio.</p>
                            <img src={pic2} class="user" />
-                           <h3>Grace Mwakio</h3>
+                           <h3>Joseph Morgan</h3>
                            <div className="stars">
                             <i className="fas fa-star"></i>
                             <i className="fas fa-star"></i>
@@ -49,7 +65,7 @@ const Reviews = () => {
                          illo suscipi tempore temporibus
                          laudantium necessitatibus illum optio.</p>
                            <img src={pic3} class="user" />
-                           <h3>Vivek Wanyama</h3>
+                           <h3>Neema Mwende</h3>
                            <div className="stars">
                             <i className="fas fa-star"></i>
                             <i className="fas fa-star"></i>

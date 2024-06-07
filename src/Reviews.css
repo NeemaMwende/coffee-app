@@ -34,3 +34,32 @@
     font-size: 1.5rem;
     color: #fff;
 }
+@media (max-width: 768px){
+    /* .review .box-container{
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+       
+    } */
+     .box-container{
+        width: 200px;
+        
+     }
+    .review .box-container .box{
+        height: 300px;
+        width: 300px;
+    }
+    .review .box-container .box p{
+        font-size: .8rem;
+    }
+    .review .box-container .box h3{
+        font-size: 1.2rem;
+    }
+    .review .box-container .box .stars i{
+        font-size: 1.2rem;
+    }
+}
+@media (max-width: 425px){
+    .review .box-container .box{
+        height: 350px;
+        width: 250px;
+    }
+}

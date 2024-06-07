@@ -1,6 +1,6 @@
 .review .box-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     margin-top: 30px;
 }
@@ -34,6 +34,21 @@
     font-size: 1.5rem;
     color: #fff;
 }
+/* @media (max-width: 1024px){
+    .review .box-container{
+        height: 300px;
+        width: 350px;
+    }
+    .review .box-container .box p{
+        font-size: .9rem;
+    }
+    .review .box-container .box h3{
+        font-size: 1.3rem;
+    }
+    .review .box-container .box .stars i{
+        font-size: 1.3rem;
+    }
+} */
 @media (max-width: 768px){
     /* .review .box-container{
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));

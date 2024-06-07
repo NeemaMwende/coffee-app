@@ -42,7 +42,7 @@ const Reviews = () => {
                             <i className="fas fa-star-half-alt"></i>
                         </div>
                 </div>
-                <div className="box">
+                {/* <div className="box">
                     <img src={quote1} />
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Velit, expedita error? Odio odit quas
@@ -57,7 +57,7 @@ const Reviews = () => {
                             <i className="fas fa-star"></i>
                             <i className="fas fa-star-half-alt"></i>
                         </div>
-                </div>
+                </div> */}
                 <div className="box">
                     <img src={quote1} />
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
